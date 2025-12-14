@@ -1,0 +1,11 @@
+# Opis projektu
+
+Projekt dotyczy wdro¿enia zdalnego dostêpu do zasobów firmy za pomoc¹ Client-to-Site VPN (L2 over IPsec) na urz¹dzeniach Ruijie. Rozwi¹zuje problem pracy poza biurem, gdy u¿ytkownicy musz¹ bezpiecznie ³¹czyæ siê z sieci¹ firmow¹ z domu lub z podró¿y.
+
+Odbiorc¹ s¹ pracownicy i administratorzy ma³ych oraz œrednich firm.
+
+W projekcie na pewno znajd¹ siê:
+- konfiguracja bramy VPN,
+- konfiguracja klienta u¿ytkownika,
+- prosta instrukcja testów po³¹czenia,
+- podstawowe zasady bezpieczeñstwa (has³a, uprawnienia, logi).

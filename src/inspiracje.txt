@@ -1,4 +1,4 @@
-// /src/inspiracje.txt
+
 Inspiracje (s³owa, skojarzenia, pomys³y):
 bezpieczeñstwo, praca zdalna, tunel, szyfrowanie, dostêp do plików, login, uprawnienia, prostota wdro¿enia, stabilnoœæ, logowanie zdarzeñ
 
