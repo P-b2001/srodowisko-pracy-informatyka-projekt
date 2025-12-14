@@ -1,48 +1,30 @@
+# Flowchart (Mermaid)
 
+```mermaid
+flowchart TD
+    A([START]) --> B[U¿ytkownik uruchamia klienta VPN]
+    B --> C[Wpisuje login/has³o i wybiera profil VPN]
+    C --> D{Czy jest Internet?}
 
-# Diagram przep³ywu (flowchart)
+    D -- NIE --> E[Komunikat: brak po³¹czenia]
+    E --> Z([END])
 
-```
-[START]
-   |
-   v
-[U¿ytkownik uruchamia klienta VPN]
-   |
-   v
-[Wpisuje login/has³o + wybiera profil VPN]
-   |
-   v
-{Czy jest Internet?}
-   |TAK                    |NIE
-   v                       v
-[Wysy³a ¿¹danie zestawienia tunelu]   [Komunikat: brak po³¹czenia]
-   |
-   v
-[Brama Ruijie: uwierzytelnienie u¿ytkownika]
-   |
-   v
-{Dane poprawne?}
-   |TAK                    |NIE
-   v                       v
-[Negocjacja IPsec (klucze, szyfrowanie)]   [Odmowa + log zdarzenia]
-   |
-   v
-[Zestawienie L2 over IPsec]
-   |
-   v
-[Przydzia³ adresu IP / dostêp do podsieci firmowej]
-   |
-   v
-{Test: ping/zasób firmowy dzia³a?}
-   |TAK                    |NIE
-   v                       v
-[U¿ytkownik pracuje zdalnie]   [Diagnostyka: DNS/trasy/firewall]
-   |
-   v
-[Roz³¹czenie VPN]
-   |
-   v
-[Zapis logów / zakoñczenie sesji]
-   |
-   v
-[END]
+    D -- TAK --> F[Wysy³a ¿¹danie zestawienia tunelu]
+    F --> G[Brama Ruijie: uwierzytelnienie u¿ytkownika]
+    G --> H{Dane poprawne?}
+
+    H -- NIE --> I[Odmowa dostêpu + zapis w logach]
+    I --> Z([END])
+
+    H -- TAK --> J[Negocjacja IPsec: klucze i szyfrowanie]
+    J --> K[Zestawienie L2 over IPsec]
+    K --> L[Przydzia³ adresu IP / dostêp do podsieci firmowej]
+    L --> M{Test: ping/zasób firmowy dzia³a?}
+
+    M -- TAK --> N[U¿ytkownik pracuje zdalnie]
+    N --> O[Roz³¹czenie VPN]
+    O --> P[Zapis logów / zakoñczenie sesji]
+    P --> Z([END])
+
+    M -- NIE --> Q[Diagnostyka: DNS / trasy / firewall]
+    Q --> O
