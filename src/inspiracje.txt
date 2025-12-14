@@ -1,0 +1,23 @@
+// /src/inspiracje.txt
+Inspiracje (s³owa, skojarzenia, pomys³y):
+bezpieczeñstwo, praca zdalna, tunel, szyfrowanie, dostêp do plików, login, uprawnienia, prostota wdro¿enia, stabilnoœæ, logowanie zdarzeñ
+
+Krótka lista elementów projektu:
+1) Opis problemu i cel wdro¿enia VPN
+2) Topologia sieci (LAN, WAN, u¿ytkownik zdalny)
+3) Wymagania wstêpne (sprzêt, konto, dostêp do Internetu)
+4) Konfiguracja administratora na bramie Ruijie (VPN, polityki, trasy, firewall)
+5) Konfiguracja u¿ytkownika koñcowego (klient, profil, dane logowania)
+6) Testy dzia³ania i scenariusze awarii
+7) Bezpieczeñstwo (has³a, ograniczenia dostêpu, logi, aktualizacje)
+8) Krótka instrukcja utrzymania (monitoring, zmiana hase³, backup konfiguracji)
+
+Wstêpne dane wejœciowe (lista kategorii / lista funkcji):
+Kategorie zasobów firmowych: pliki, drukarki, aplikacje wewnêtrzne, serwer NAS, panel administracyjny, monitoring/serwery
+Funkcje systemu: logowanie u¿ytkownika, zestawienie tunelu IPsec, przydzia³ IP, dostêp do podsieci LAN, kontrola uprawnieñ, rejestrowanie logów, roz³¹czanie sesji, podstawowe raportowanie
+
+Lista Ÿróde³ pomys³u:
+w³asna potrzeba (bezpieczna praca poza biurem)
+przyk³ady z pracy/sta¿u (u¿ytkownicy potrzebuj¹ dostêpu do zasobów LAN)
+przypadek (awaria dostêpu zdalnego i potrzeba ustandaryzowania rozwi¹zania)
+znajomy z IT (podpowiedŸ, ¿e VPN jest najprostszym i najbezpieczniejszym podejœciem)

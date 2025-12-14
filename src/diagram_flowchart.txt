@@ -1,0 +1,44 @@
+// /src/diagram_flowchart.txt
+[START]
+   |
+   v
+[U¿ytkownik uruchamia klienta VPN]
+   |
+   v
+[Wpisuje login/has³o + wybiera profil VPN]
+   |
+   v
+{Czy jest Internet?}
+   |TAK                    |NIE
+   v                       v
+[Wysy³a ¿¹danie zestawienia tunelu]   [Komunikat: brak po³¹czenia]
+   |
+   v
+[Brama Ruijie: uwierzytelnienie u¿ytkownika]
+   |
+   v
+{Dane poprawne?}
+   |TAK                    |NIE
+   v                       v
+[Negocjacja IPsec (klucze, szyfrowanie)]   [Odmowa + log zdarzenia]
+   |
+   v
+[Zestawienie L2 over IPsec]
+   |
+   v
+[Przydzia³ adresu IP / dostêp do podsieci firmowej]
+   |
+   v
+{Test: ping/zasób firmowy dzia³a?}
+   |TAK                    |NIE
+   v                       v
+[U¿ytkownik pracuje zdalnie]   [Diagnostyka: DNS/trasy/firewall]
+   |
+   v
+[Roz³¹czenie VPN]
+   |
+   v
+[Zapis logów / zakoñczenie sesji]
+   |
+   v
+[END]
